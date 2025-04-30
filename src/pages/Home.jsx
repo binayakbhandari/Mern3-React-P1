@@ -1,8 +1,21 @@
-
 function Home(){
+    var count = 0
+    const increaseCount = ()=>{
+        count++
+        console.log(count)
+    }
+    const decreaseCount = ()=>{
+        count--
+        console.log(count)
+    }
     return(
         <>
-        <h1>Welcome to Home page.</h1>
+        <h1>Hello World</h1>
+
+        <h1> {count} </h1> 
+        <button onClick={increaseCount}> + </button>
+        <button onClick={decreaseCount}> - </button>
+
         </>
     )
 }
