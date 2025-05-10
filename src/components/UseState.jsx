@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function UseState() {
     const [count, setCount] = useState(0)
@@ -11,6 +11,14 @@ function UseState() {
             count-1
         )
     }
+
+    // useEffect(()=>{
+    //     console.log("Hahaha")
+    // },[count])
+
+        useEffect(()=>{
+        console.log("Ma jahile execute hunxu")
+    })
 
     return (
         <>
